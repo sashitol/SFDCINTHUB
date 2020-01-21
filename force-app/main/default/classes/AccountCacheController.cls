@@ -4,7 +4,7 @@
  * @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
  * @Group              : 
  * @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
- * @Last Modified On   : 21/1/2020, 12:06:49 pm
+ * @Last Modified On   : 21/1/2020, 12:13:13 pm
  * @Modification Log   : 
  * Ver       Date            Author      		    Modification
  * 1.0    16/1/2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
@@ -17,7 +17,9 @@ public with sharing class AccountCacheController {
      
   list<account> acc =[SELECT Id, name,phone,Industry,Fax FROM Account ORDER BY createdDate ASC];
 	
+
       System.debug('@@@'+acc);
        return acc;
   }
+
 }
